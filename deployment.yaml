@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-crud
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-world-crud
+  template:
+    metadata:
+      labels:
+        app: hello-world-crud
+    spec:
+      containers:
+      - name: hello-world-crud
+        image: hello-world-crud
+        imagePullPolicy: Never
