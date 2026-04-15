@@ -9,7 +9,7 @@ public class MessageManagerTest {
 
         manager.create(new Message(1, "Donation are processed and recorded accurately"));
 
-        assertEquals("Hi Sabarissh", manager.readAll().get(0).getText());
+        assertEquals("Donation are processed and recorded accurately", manager.readAll().get(0).getText());
     }
 
     @Test
